@@ -1,0 +1,41 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Futuristic movie popularity bar chart">
+  <defs>
+    <linearGradient id="bgMovies" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050712" />
+      <stop offset="100%" stop-color="#0c1230" />
+    </linearGradient>
+    <linearGradient id="barA" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6b9bff" />
+      <stop offset="100%" stop-color="#2c3d73" />
+    </linearGradient>
+    <linearGradient id="barB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8ec4ff" />
+      <stop offset="100%" stop-color="#374071" />
+    </linearGradient>
+    <linearGradient id="barC" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f4b23f" />
+      <stop offset="100%" stop-color="#573b1e" />
+    </linearGradient>
+    <radialGradient id="glowMovies" cx="85%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#f4b23f" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#f4b23f" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bgMovies)" />
+  <circle cx="360" cy="120" r="160" fill="url(#glowMovies)" />
+  <g opacity="0.5" stroke="#1b244b" stroke-width="1">
+    <path d="M80 420 H440" />
+    <path d="M80 340 H440" />
+    <path d="M80 260 H440" />
+    <path d="M80 180 H440" />
+  </g>
+  <g transform="translate(0,-20)">
+    <rect x="120" y="220" width="70" height="200" fill="url(#barA)" rx="18" />
+    <rect x="220" y="160" width="70" height="260" fill="url(#barB)" rx="18" />
+    <rect x="320" y="110" width="70" height="310" fill="url(#barC)" rx="18" />
+  </g>
+  <text x="155" y="450" fill="#9da2c0" font-family="'Space Grotesk', sans-serif" font-size="18" text-anchor="middle">Thriller</text>
+  <text x="255" y="450" fill="#9da2c0" font-family="'Space Grotesk', sans-serif" font-size="18" text-anchor="middle">Drama</text>
+  <text x="355" y="450" fill="#f4b23f" font-family="'Space Grotesk', sans-serif" font-size="18" text-anchor="middle">Sci-Fi</text>
+  <text x="256" y="80" fill="#f4b23f" font-family="'Space Grotesk', sans-serif" font-size="24" text-anchor="middle">Netflix Popularity</text>
+</svg>

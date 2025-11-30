@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alex MacKenzie Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+  <!-- Link to style.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/satoshi">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="top"></div>
+
+  <header>
+    <div class="nav-left">
+      <a href="#top" class="brand">
+        <div class="logo-rocket" aria-hidden="true"></div>
+      </a>
+    </div>
+
+    <nav id="nav-links">
+      <a href="#experience">Timeline</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Software</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-center">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <a href="mailto:alex.mack@rogers.com" class="nav-icon" aria-label="Email Alex">
+        <i class="fa-solid fa-square-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/amackenzie0/" class="nav-icon" aria-label="LinkedIn profile">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- LANDING -->
+  <section id="landing">
+    <div id="landing-bg"></div>
+
+    <div class="landing-inner">
+      <div class="landing-avatar-wrapper">
+        <div class="landing-avatar">
+          <!-- Animated rocket scene inside the circle -->
+          <div class="rocket-scene">
+            <div class="rocket-stars"></div>
+            <div class="rocket-stars rocket-stars-far"></div>
+
+            <div class="rocket-stream"></div>
+
+            <div class="rocket-animated">
+              <!-- EXACT SAME ROCKET, just scaled & animated via CSS -->
+              <div class="logo-rocket"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing-text">
+        <h2 class="landing-title">
+          Hi, I'm <span class="gold-name">Alex</span>
+        </h2>
+        <p class="landing-subtitle">
+          I accelerate growth with analytics
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Scroll Down Arrow -->
+    <a href="#about" class="scroll-down">
+      <span></span>
+      <span></span>
+    </a>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I’m a recent statistics graduate from the University of Toronto and currently working as an Analyst at ZEISS Vision Care. Outside of work, I enjoy exploring real-world data using AI & data analysis. I'm primarily interested in human behaviour, along with the leatest developements in healthcare and technology.
+          </p>
+          <div class="about-cta">
+            <a href="#experience" class="timeline-button">View My Timeline</a>
+          </div>
+        </div>
+        <div class="about-photo">
+          <img src="images/alex-profile.png" alt="Portrait of Alex MacKenzie" />
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Timeline</h2>
+      <div id="experience-root"></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/project-basketball.svg" alt="Futuristic basketball analytics graph" />
+          <div class="project-label">
+            <h3>NBA Player Trajectory Predictor</h3>
+            <p>Predicting the success & longevity of pro basketball players</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/drink-amprec2.png" alt="Drug use and drinking relationship plot" />
+          <div class="project-label">
+            <h3>Non-Medical Drug Use Analysis</h3>
+            <p>Quantifying misuse of drugs among Canadian demographics</p>
+          </div>
+        </div>
+        <a class="project-card project-link" href="https://diana-yxn.shinyapps.io/TADA-mobility/" target="_blank" rel="noopener noreferrer">
+          <img src="images/tada-mobility2.png" alt="Covid mobility relationship map" />
+          <div class="project-label">
+            <h3>COVID-19 Population Mobility Dashboard</h3>
+            <p>Exploring the link between viral cases and human activity</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Software & Tools -->
+    <section id="skills">
+      <h2>Software &amp; Tools</h2>
+      
+
+      <div class="skills-grid">
+        <div class="skill-tile-img">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="skill-label">Python</div>
+        </div>
+
+        <div class="skill-tile-img">
+          <div class="skill-icon"><i class="fa-brands fa-r-project"></i></div>
+          <div class="skill-label">R</div>
+        </div>
+
+        <div class="skill-tile-img">
+          <div class="skill-icon"><i class="fa-regular fa-file-excel"></i></div>
+          <div class="skill-label">Excel</div>
+        </div>
+
+        <div class="skill-tile-img">
+          <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="skill-label">Power BI</div>
+        </div>
+
+        <div class="skill-tile-img">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-label">SQL</div>
+        </div>
+
+        <div class="skill-tile-img">
+          <div class="skill-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <div class="skill-label">Tableau</div>
+        </div>
+
+        <div class="skill-tile-img">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <div class="skill-label">HTML</div>
+        </div>
+
+        <div class="skill-tile-img">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <div class="skill-label">CSS</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-wrapper">
+        <article class="education-card">
+          <span class="education-star" aria-hidden="true"></span>
+          <h3>Bachelor of Science (Honours), Statistics</h3>
+          <p class="education-subtitle">University of Toronto · St. George Campus · 2018–2022</p>
+          <ul>
+            <li>Graduate with Distinction</li>
+            <li>Double Minor in Mathematics & Biology</li>
+            <li>Dean's List Honours 2018-2019</li>
+            <li>Badminton Intramurals, 2019-2020</li>
+            <li>Courses Completed: Probability & Statistics II, Linear Algebra II, Calculus II, Experimental Design, Applied Statistics, Data Analysis II</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form">
+          <label for="contact-name">Your Name</label>
+          <input type="text" id="contact-name" name="name" placeholder="What's your name?" required />
+
+          <label for="contact-email">Your Email</label>
+          <input type="email" id="contact-email" name="email" placeholder="name@email.com" required />
+
+          <label for="contact-subject">Your Subject</label>
+          <input type="text" id="contact-subject" name="subject" placeholder="What is this about?" maxlength="120" required />
+
+          <label for="contact-message">Your Message</label>
+          <textarea id="contact-message" name="message" rows="2" placeholder="What would you like to say?" maxlength="200" required></textarea>
+
+          <button type="submit" class="contact-submit" id="contact-submit">Launch Email to Me</button>
+        </form>
+        <div class="contact-visual">
+          <div class="contact-rocket-scene">
+            <div class="contact-stars contact-stars-near"></div>
+            <div class="contact-stars contact-stars-far"></div>
+            <div class="contact-rocket-trail"></div>
+            <div class="contact-rocket">
+              <div class="logo-rocket"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p class="footer-label">© Alex MacKenzie 2025</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    const experiences = [
+      {
+        title: "Business Data Analyst",
+        company: "ZEISS Vision Care",
+        range: "Nov 2022 – Present",
+        bullets: [
+          "Developed a Power BI dashboard of customer orders using modelling & DAX calculations to track unit growth showing key brand & customer trends, replacing Excel workflow and eliminating 90% prep time",
+          "Created an interactive sales map of Canada using Python highlighting underperforming area code regions to enable executive level regional sales tracking",
+          "Designed an ETL pipeline to clean financial program data from multiple sources, enabling weekly data refresh for the sales team",
+          "Automated Excel reporting using Power Query reducing ad-hoc requests, providing operational KPIs, & accelerating campaign sales analysis",
+          "Managed 5K business accounts and led ERP data migration by executing data-mapping & validation, ensuring zero downtime"
+        ]
+      },
+      {
+        title: "Quantitative Genetics Researcher",
+        company: "University of Toronto – Sztepanacz Lab",
+        range: "Sep 2021 – Jun 2022",
+        bullets: [
+          "Used R Studio and Bash to create pedigrees and model genetic variation in simulated animal populations, comparing observed trait values with genetic underpinnings via multivariate matrix comparison.",
+          "Found similarity of phenotypic and genetic variation using PCA and subspace testing, visualizing the results with R ggplot2.",
+          "Designed an award-winning poster and presented novel findings at the OE3C 2022 conference."
+        ]
+      },
+      {
+        title: "Business Systems Analyst Intern",
+        company: "RBC Royal Bank of Canada",
+        range: "May 2020 – Aug 2020",
+        bullets: [
+          "Integrated Excel and ServiceNow to present software application health metrics to leadership, enabling retrieval of key fiscal diagnostic trends across business lines and operational areas.",
+          "Developed a teamwide business analytics dashboard in ServiceNow that reduced total support case time by 4%.",
+          "Ran SQL queries to assess data needs and streamlined data pipelines between wealth management apps using Excel and JIRA."
+        ]
+      },
+      {
+        title: "Taekwondo Master Instructor",
+        company: "Kickstart Taekwondo",
+        range: "2017-2020",
+        bullets: [
+          "Led classes with more than 20 students of all ages, instilling discipline and confidence every session.",
+          "Promoted teamwork by tailoring instruction for collaborative sparring and group drills.",
+          "Directed martial arts training with pattern recognition and personalized strategies to master mobility and techniques."
+        ]
+      },
+      {
+        title: "Summer Camp Leader",
+        company: "Kickstart Taekwondo",
+        range: "2018 – 2019",
+        bullets: [
+          "Designed embedded reporting suites for SaaS customers.",
+          "Introduced experimentation frameworks that doubled product insights.",
+          "Mentored junior analysts through a structured learning program."
+        ]
+      },
+      {
+        title: "Leaders of Tomorrow Certification",
+        company: "Etobicoke Collegiate Institute",
+        range: "2018",
+        bullets: [
+          "Designed embedded reporting suites for SaaS customers.",
+          "Introduced experimentation frameworks that doubled product insights.",
+          "Mentored junior analysts through a structured learning program."
+        ]
+      },
+      {
+        title: "High School Math Tutor",
+        company: "Zen Academy @ Etobicoke Collegiate Institute",
+        range: "2015 – 2018",
+        bullets: [
+          "Designed embedded reporting suites for SaaS customers.",
+          "Introduced experimentation frameworks that doubled product insights.",
+          "Mentored junior analysts through a structured learning program."
+        ]
+      },
+      {
+        title: "Church Pianist & Organ Player",
+        company: "Islington United Church",
+        range: "2015 – 2018",
+        bullets: [
+          "Designed embedded reporting suites for SaaS customers.",
+          "Introduced experimentation frameworks that doubled product insights.",
+          "Mentored junior analysts through a structured learning program."
+        ]
+      }
+    ];
+
+    const ExperienceTimeline = () => {
+      const [expanded, setExpanded] = React.useState(() =>
+        experiences.map(() => false)
+      );
+
+      const toggleCard = (index) => {
+        setExpanded((prev) =>
+          prev.map((open, idx) => (idx === index ? !open : open))
+        );
+      };
+
+      return (
+        <div className="experience-wrapper">
+          <div className="experience-list">
+            {experiences.map((exp, index) => {
+              const bodyOpen = expanded[index];
+              const bodyId = `experience-body-${index}`;
+
+              return (
+                <article className="experience-card" key={exp.title}>
+                  <span className="timeline-star" aria-hidden="true"></span>
+                  <button
+                    type="button"
+                    className={`experience-toggle ${bodyOpen ? "open" : ""}`}
+                    onClick={() => toggleCard(index)}
+                    aria-expanded={bodyOpen}
+                    aria-controls={bodyId}
+                  >
+                    <span className="toggle-caret" aria-hidden="true"></span>
+                    <div className="experience-heading">
+                      <h3>{exp.title}</h3>
+                      <p className="experience-subtitle">{exp.company}</p>
+                    </div>
+                    <span className="experience-range">{exp.range}</span>
+                  </button>
+                  <div
+                    className={`experience-body ${bodyOpen ? "open" : ""}`}
+                    id={bodyId}
+                  >
+                    <ul>
+                      {exp.bullets.map((bullet, idx) => (
+                        <li key={idx}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      );
+    };
+
+    const experienceRoot = document.getElementById("experience-root");
+    if (experienceRoot) {
+      const root = ReactDOM.createRoot(experienceRoot);
+      root.render(<ExperienceTimeline />);
+    }
+  </script>
+
+  <!-- JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("open");
+        });
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      VANTA.NET({
+        el: "#landing-bg",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xe4e8f7,
+        backgroundColor: 0x05071a,
+        points: 10.0,
+        maxDistance: 23.0,
+        spacing: 18.0,
+        speed: 0.05
+      })
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const contactForm = document.getElementById("contact-form");
+      const submitBtn = document.getElementById("contact-submit");
+      const rocket = document.querySelector(".contact-rocket");
+      if (!contactForm) return;
+
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("contact-name").value.trim();
+        const email = document.getElementById("contact-email").value.trim();
+        const subjectLine = document.getElementById("contact-subject").value.trim();
+        const message = document.getElementById("contact-message").value.trim();
+
+        if (!name) {
+          alert("Please enter your name.");
+          return;
+        }
+
+        if (!email || !email.includes("@")) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+
+        if (!subjectLine) {
+          alert("Please add a subject.");
+          return;
+        }
+
+        if (!message) {
+          alert("Please include a message.");
+          return;
+        }
+
+        const subject = encodeURIComponent(subjectLine);
+        const body = encodeURIComponent(`${message}\n\nMy Email: ${email}\n\nFrom ${name}`);
+        window.location.href = `mailto:alex.mack@rogers.com?subject=${subject}&body=${body}`;
+
+        if (submitBtn) {
+          submitBtn.textContent = "Email Launched to Alex";
+          submitBtn.classList.add("delivered");
+          setTimeout(() => {
+            submitBtn.textContent = "Launch Email to Me";
+            submitBtn.classList.remove("delivered");
+          }, 2000);
+        }
+
+        if (rocket) {
+          rocket.classList.remove("contact-rocket-return");
+          rocket.classList.add("contact-rocket-launch");
+          setTimeout(() => {
+            rocket.classList.remove("contact-rocket-launch");
+            rocket.classList.add("contact-rocket-hidden");
+            setTimeout(() => {
+              rocket.classList.remove("contact-rocket-hidden");
+              rocket.classList.add("contact-rocket-return");
+              setTimeout(() => {
+                rocket.classList.remove("contact-rocket-return");
+              }, 800);
+            }, 2000);
+          }, 600);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
