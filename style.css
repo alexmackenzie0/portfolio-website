@@ -1768,6 +1768,12 @@ footer::before {
   }
 }
 
+@media (orientation: landscape) and (max-height: 580px) {
+  .scroll-down {
+    display: none;
+  }
+}
+
 .contact-visual {
   display: flex;
 }
