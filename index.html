@@ -373,9 +373,11 @@
                     <span className="toggle-caret" aria-hidden="true"></span>
                     <div className="experience-heading">
                       <h3>{exp.title}</h3>
-                      <p className="experience-subtitle">{exp.company}</p>
+                      <div className="experience-meta">
+                        <p className="experience-subtitle">{exp.company}</p>
+                        <span className="experience-range">{exp.range}</span>
+                      </div>
                     </div>
-                    <span className="experience-range">{exp.range}</span>
                   </button>
                   <div
                     className={`experience-body ${bodyOpen ? "open" : ""}`}
