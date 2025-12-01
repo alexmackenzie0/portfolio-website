@@ -1411,7 +1411,7 @@ footer::before {
   .nav-right {
     gap: 0.4rem;
     justify-self: end;
-    margin-right: 0.2rem;
+    margin-right: 0rem;
   }
 
   .nav-icon {
