@@ -1660,6 +1660,43 @@ footer::before {
 }
 
 @media (max-width: 720px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    gap: 1.4rem;
+  }
+
+  .about-text {
+    flex: 1 1 auto;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .about-photo {
+    flex: 0 0 auto;
+    align-self: center;
+    min-height: auto;
+  }
+
+  .about-photo img {
+    width: 135px;
+    height: 135px;
+  }
+
+  .experience-wrapper,
+  .education-wrapper {
+    padding-left: 0;
+  }
+
+  .experience-wrapper::before,
+  .education-wrapper::before,
+  .experience-card .timeline-star,
+  .education-card .education-star {
+    display: none;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
