@@ -733,8 +733,8 @@ a:hover {
 
 .experience-wrapper {
   position: relative;
-  --timeline-padding: 100px;
-  --timeline-line-offset: 48px;
+  --timeline-padding: 80px;
+  --timeline-line-offset: 30px;
   padding-left: var(--timeline-padding);
 }
 
@@ -813,7 +813,7 @@ a:hover {
   position: absolute;
   width: 20px;
   height: 20px;
-  left: calc((var(--timeline-line-offset) - var(--timeline-padding)) - 10px);
+  left: calc((var(--timeline-line-offset) - var(--timeline-padding)) - 9px);
   top: 32px;
   border-radius: 50%;
   background: #ffffff;
